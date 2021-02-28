@@ -1,9 +1,10 @@
-import { Dimensions } from "react-native";
+import { Dimensions } from 'react-native';
 const { width, height } = Dimensions.get("window");
 
 export const COLORS = {
     // main colors
     primary: "#ff2727",
+    secondary: "#000",
 
     // all colors
     dark1: "#24272c",
@@ -14,7 +15,7 @@ export const COLORS = {
 
     red1: "#cc0000",
     red2: "#ff3434"
-};
+}
 
 export const SIZES = {
     // spacing
@@ -42,7 +43,7 @@ export const SIZES = {
     // dimensions
     width,
     height
-};
+}
 
 export const FONTS = {
     largeTitle: { fontFamily: "Bodoni 72", fontSize: SIZES.largeTitle},
@@ -56,7 +57,7 @@ export const FONTS = {
     body4: { fontFamily: "Rubik-Regular", fontSize: SIZES.body4},
     body5: { fontFamily: "Rubik-Regular", fontSize: SIZES.body5},
     body6: { fontFamily: "Rubik-Regular", fontSize: SIZES.body6}
-};
+}
 
 const appTheme = { COLORS, SIZES, FONTS };
 
