@@ -3,21 +3,36 @@ import { View, Image } from 'react-native';
 import {createBottomTabNavigator, BottomTabBar } from "@react-navigation/bottom-tabs";
 
 import {Home, Offers, Reservations, Account } from '../screens';
-import { COLORS, icons } from '../constants'
+import { COLORS, SIZES, icons } from '../constants'
 
 const Tab = createBottomTabNavigator();
 
 const Tabs = () => {
     return (
         <Tab.Navigator tabBarOptions={{
+            showLabel: false,
             activeTintColor: COLORS.primary,
             inactiveTintColor: COLORS.secondary,
             backgroundColor: COLORS.dark1,
+
             style: {
-                width: 300,
-                alignItems: 'center',
-                justifyContent: 'center',
-                backgroundColor: COLORS.dark1
+                width: SIZES.width - 32,
+                height: 64,
+
+                position: 'absolute',
+                marginBottom: 34,
+                left: '50%',
+                marginLeft: SIZES.width / -2 + 16,
+
+                backgroundColor: COLORS.dark1,
+                borderRadius: SIZES.radius2,
+                shadowColor: "#000",
+                shadowOffset: {
+                    width: 0,
+                    height: 0,
+                },
+                shadowOpacity: 0.3,
+                shadowRadius: 10,
             }
         }}>
             <Tab.Screen name="Acceuil"
@@ -29,6 +44,7 @@ const Tabs = () => {
                                        style={{
                                            width: 25,
                                            height: 25,
+                                           marginTop: 24.5,
                                            tintColor: focused ? COLORS.primary : COLORS.secondary
                                        }}/>
                             )
@@ -43,7 +59,8 @@ const Tabs = () => {
                                        style={{
                                            width: 25,
                                            height: 25,
-                                           tintColor: focused ? COLORS.primary : COLORS.secondary
+                                           marginTop: 24.5,
+                                           tintColor: focused ? COLORS.primary : COLORS.secondary,
                                        }}/>
                             )
                         }}
@@ -57,6 +74,7 @@ const Tabs = () => {
                                        style={{
                                            width: 25,
                                            height: 25,
+                                           marginTop: 24.5,
                                            tintColor: focused ? COLORS.primary : COLORS.secondary
                                        }}/>
                             )
@@ -71,6 +89,7 @@ const Tabs = () => {
                                        style={{
                                            width: 25,
                                            height: 25,
+                                           marginTop: 24.5,
                                            tintColor: focused ? COLORS.primary : COLORS.secondary
                                        }}/>
                             )
