@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "username": "Mark",
+    "foodname": "Lasagne"
+  },
+  {
+    "id": 2,
+    "username": "Antoine",
+    "foodname": "Pizza"
+  },
+  {
+    "id": 3,
+    "username": "Tristan",
+    "foodname": "Pates"
+  },
+  {
+    "id": 3,
+    "username": "Tristan",
+    "foodname": "Pates"
+  },
+  {
+    "id": 3,
+    "username": "Tristan",
+    "foodname": "Pates"
+  },
+  {
+    "id": 3,
+    "username": "Tristan",
+    "foodname": "Pates"
+  }
+]
