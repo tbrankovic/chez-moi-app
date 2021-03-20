@@ -33,6 +33,8 @@ const Tabs = () => {
                 },
                 shadowOpacity: 0.3,
                 shadowRadius: 10,
+
+                elevation: 1
             }
         }}>
             <Tab.Screen name="Acceuil"
