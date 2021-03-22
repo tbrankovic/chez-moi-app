@@ -4,6 +4,7 @@ import {createBottomTabNavigator, BottomTabBar } from "@react-navigation/bottom-
 
 import {Home, Offers, Reservations, Account } from '../screens';
 import { COLORS, SIZES, icons } from '../constants'
+import { HomeStackScreen } from './Stacks'
 
 const Tab = createBottomTabNavigator();
 
@@ -24,7 +25,7 @@ const Tabs = () => {
                 left: '50%',
                 marginLeft: SIZES.width / -2 + 16,
 
-                backgroundColor: COLORS.dark1,
+                backgroundColor: COLORS.dark2,
                 borderRadius: SIZES.radius2,
                 shadowColor: "#000",
                 shadowOffset: {
@@ -38,11 +39,11 @@ const Tabs = () => {
             }
         }}>
             <Tab.Screen name="Acceuil"
-                        component={Home}
+                        component={HomeStackScreen}
                         options={{
                             tabBarIcon: ({focused}) => (
                                 <Image source={icons.home}
-                                       resizeMode="Contain"
+                                       resizeMode="contain"
                                        style={{
                                            width: 25,
                                            height: 25,
@@ -57,7 +58,7 @@ const Tabs = () => {
                         options={{
                             tabBarIcon: ({focused}) => (
                                 <Image source={icons.tray}
-                                       resizeMode="Contain"
+                                       resizeMode="contain"
                                        style={{
                                            width: 25,
                                            height: 25,
@@ -72,7 +73,7 @@ const Tabs = () => {
                         options={{
                             tabBarIcon: ({focused}) => (
                                 <Image source={icons.reception}
-                                       resizeMode="Contain"
+                                       resizeMode="contain"
                                        style={{
                                            width: 25,
                                            height: 25,
@@ -87,7 +88,7 @@ const Tabs = () => {
                         options={{
                             tabBarIcon: ({focused}) => (
                                 <Image source={icons.user}
-                                       resizeMode="Contain"
+                                       resizeMode="contain"
                                        style={{
                                            width: 25,
                                            height: 25,

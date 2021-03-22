@@ -1,19 +1,23 @@
 import React from 'react';
-import {Text, View, StyleSheet, TouchableOpacity, Image, FlatList, ScrollView} from 'react-native';
+import {Text, View, StyleSheet, TouchableOpacity, Image, FlatList, ScrollView, Button} from 'react-native';
 import { COLORS, SIZES, FONTS, icons, images } from '../constants'
-import {Custom1Card} from "../components/HomeComps";
+import {Custom1Card} from "../components/HomeComponents";
 
-const data = require('../test/data.json');
+const testData = require('../test/data.json');
 
-const Home = () => {
+const Home = ({ navigation }) => {
     return (
         <View style={styles.container}>
             <Text style={FONTS.largeTitle}>Acceuil</Text>
             <ScrollView>
                 <View style={styles.list}>
-                    { data.map((d) => {
+                    { testData.map((d) => {
                         return (
-                            <Custom1Card key={d.id} username={d.username} foodname={d.foodname} />
+                            <Custom1Card key={d.id}
+                                         username={d.username}
+                                         foodname={d.foodname}
+                                         navigation={navigation}
+                                        />
                         )
                     }) }
                 </View>

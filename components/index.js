@@ -1,4 +1,4 @@
-import GlobalComps from './GlobalComps';
-import HomeComps from './HomeComps';
+import GlobalComps from './GlobalComponents';
+import HomeComps from './HomeComponents';
 
 export { GlobalComps, HomeComps }
