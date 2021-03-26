@@ -3,21 +3,20 @@ import { Text, View, TouchableOpacity, Dimensions, StyleSheet, Image } from 'rea
 import appTheme from "../constants/theme";
 import images from "../constants/images";
 
-
-export class Custom1Card extends React.Component {
+export class OfferCell extends React.Component {
     render() {
         return (
             <View>
                 <TouchableOpacity
-                    style={styles.card}
+                    style={styles.cell}
                     onPress={() => this.props.navigation.navigate('Details', {name: this.props.username})}
                 >
-                    <Text style={appTheme.FONTS.smallTitle}>Chez {this.props.username}</Text>
                     <Image source={images.pasta} style={styles.roundImage}/>
                     <View style={styles.infoContainer}>
-                        <Text style={[appTheme.FONTS.h4, {marginBottom: 4}, {float: 'left'}]}>{this.props.foodname}</Text>
-                        <Text style={[appTheme.FONTS.body3, {marginBottom: 4}]}>Assiette</Text>
-                        <Text style={appTheme.FONTS.body5}>2,3 km</Text>
+                        <Text>Lasagne</Text>
+                        <Text>2 plats restants</Text>
+                        <Text>3 plats vendus</Text>
+                        <Text>10h00-18h00</Text>
                     </View>
                 </TouchableOpacity>
             </View>
@@ -35,11 +34,10 @@ const styles = StyleSheet.create({
         marginBottom: 8
     },
     infoContainer: {
-        flex: 0,
         justifyContent: 'flex-start',
         width: '100%',
     },
-    card: {
+    cell: {
         marginTop: 12,
         padding: 16,
         backgroundColor: appTheme.COLORS.dark1,
@@ -48,14 +46,13 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'flex-start',
         alignSelf: 'stretch',
-        width: (Dimensions.get('window').width - 3 * appTheme.SIZES.spacing2) / 2,
+        width: 300,
     },
     roundImage: {
-        width: 130,
-        height: 130,
-        borderRadius: 65,
+        width: 92,
+        height: 92,
+        borderRadius: 46,
         overflow: 'hidden',
-        marginTop: 8,
-        marginBottom: 8,
+        margin: 8,
     }
 });

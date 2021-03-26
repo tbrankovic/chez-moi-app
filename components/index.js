@@ -1,4 +1,4 @@
 import GlobalComps from './GlobalComponents';
 import HomeComps from './HomeComponents';
-
-export { GlobalComps, HomeComps }
+import OfferCell from './OfferCell'
+export { GlobalComps, HomeComps, OfferCell }

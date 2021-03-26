@@ -4,7 +4,7 @@ import {createStackNavigator} from "@react-navigation/stack";
 
 import { Home, Offers, Reservations, Account, Details } from '../screens';
 import { leftArrow } from "../constants/icons";
-import { COLORS } from "../constants";
+import { COLORS, FONTS } from "../constants";
 
 const HomeStack = createStackNavigator();
 
@@ -16,7 +16,7 @@ export function HomeStackScreen() {
                     backgroundColor: COLORS.dark2,
                     shadowColor: 'transparent'
                 },
-                headerShown: false,
+                headerShown: true,
                 headerBackTitleVisible: false,
                 headerBackImage: () =>
                     <Image source={ leftArrow }
@@ -26,14 +26,18 @@ export function HomeStackScreen() {
                                marginLeft: 12
                            }}
                     />,
-                headerTintColor: '#000',
+                headerTintColor: COLORS.secondary,
                 headerTitleStyle: {
-                    fontWeight: 'bold',
+                    fontFamily: "Bodoni 72",
+                    fontSize: 26,
                 }
             }}
         >
             <HomeStack.Screen name="Home" component={Home} />
-            <HomeStack.Screen name="Details" component={Details} />
+            <HomeStack.Screen name="Details"
+                              component={Details}
+                              options={({ route }) => ({ title: 'Chez ' + route.params.name })}
+            />
         </HomeStack.Navigator>
     )
 }
