@@ -1,6 +1,6 @@
 import React from 'react';
 import { Text, View, TouchableOpacity, Dimensions, StyleSheet, Image } from 'react-native';
-import appTheme from "../constants/theme";
+import appTheme, {COLORS} from "../constants/theme";
 import images from "../constants/images";
 
 export class OfferCell extends React.Component {
@@ -13,10 +13,10 @@ export class OfferCell extends React.Component {
                 >
                     <Image source={images.pasta} style={styles.roundImage}/>
                     <View style={styles.infoContainer}>
-                        <Text>Lasagne</Text>
-                        <Text>2 plats restants</Text>
-                        <Text>3 plats vendus</Text>
-                        <Text>10h00-18h00</Text>
+                        <Text style={[{color: COLORS.secondary}]}>Lasagne</Text>
+                        <Text style={[{color: COLORS.secondary}]}>2 plats restants</Text>
+                        <Text style={[{color: COLORS.secondary}]}>3 plats vendus</Text>
+                        <Text style={[{color: COLORS.secondary}]}>10h00-18h00</Text>
                     </View>
                 </TouchableOpacity>
             </View>
@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
         padding: 16,
         backgroundColor: appTheme.COLORS.dark1,
         borderRadius: 20,
-        flexDirection: 'column',
+        flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'flex-start',
         alignSelf: 'stretch',

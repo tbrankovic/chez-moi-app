@@ -16,6 +16,7 @@ export default function App() {
 
     return (
         <NavigationContainer>
+            <StatusBar barStyle="light-content" />
             <Stack.Navigator screenOptions={{ headerShown: false, cardStyle: { backgroundColor: COLORS.dark2 } }}
                              initialRouteName = { "Tabs" }
             >
