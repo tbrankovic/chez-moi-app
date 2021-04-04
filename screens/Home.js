@@ -2,7 +2,7 @@ import React from 'react';
 import {Text, View, StyleSheet, TouchableOpacity, Image, FlatList, ScrollView, Button} from 'react-native';
 import { COLORS, SIZES, FONTS, icons, images } from '../constants'
 import {Custom1Card} from "../components/HomeComponents";
-import {HomeHeader} from "../components/headers/HomeHeader";
+import HomeHeader from "../components/headers/HomeHeader";
 
 const testData = require('../test/data.json');
 
