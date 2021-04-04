@@ -12,6 +12,7 @@ const Tabs = () => {
     return (
         <Tab.Navigator tabBarOptions={{
             showLabel: false,
+            shadowColor: 'transparent',
             activeTintColor: COLORS.primary,
             inactiveTintColor: COLORS.secondary,
             backgroundColor: COLORS.dark1,
