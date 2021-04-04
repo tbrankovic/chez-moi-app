@@ -16,7 +16,7 @@ export function HomeStackScreen() {
                     backgroundColor: COLORS.dark2,
                     shadowColor: 'transparent'
                 },
-                headerShown: true,
+                headerShown: false,
                 headerBackTitleVisible: false,
                 headerBackImage: () =>
                     <Image source={ leftArrow }

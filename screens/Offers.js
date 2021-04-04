@@ -2,10 +2,14 @@ import React from 'react';
 import { Text, View, StyleSheet, TouchableOpacity, Image, FlatList } from 'react-native';
 import { COLORS, SIZES, FONTS, icons, images } from '../constants'
 import { OfferCell } from "../components/OfferCell";
+import {useNavigation} from "@react-navigation/core";
 
 const testData = require('../test/data.json');
 
-const Offers = ({navigation}) => {
+const Offers = () => {
+
+    const navigation = useNavigation();
+
     return (
         <View style={styles.container}>
             <Text style={FONTS.largeTitle}>Offres</Text>

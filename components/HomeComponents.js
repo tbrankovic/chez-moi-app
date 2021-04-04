@@ -15,7 +15,7 @@ export class Custom1Card extends React.Component {
                     <Text style={appTheme.FONTS.smallTitle}>Chez {this.props.username}</Text>
                     <Image source={images.pasta} style={styles.roundImage}/>
                     <View style={styles.infoContainer}>
-                        <Text style={[appTheme.FONTS.h4, {marginBottom: 4}, {float: 'left'}]}>{this.props.foodname}</Text>
+                        <Text style={[appTheme.FONTS.h4, {marginBottom: 4}]}>{this.props.foodname}</Text>
                         <Text style={[appTheme.FONTS.body3, {marginBottom: 4}]}>Assiette</Text>
                         <Text style={appTheme.FONTS.body5}>2,3 km</Text>
                     </View>
