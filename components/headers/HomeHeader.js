@@ -4,18 +4,18 @@ import appTheme, {FONTS} from "../../constants/theme";
 import images from "../../constants/images";
 import AppContext from "../AppContext";
 
-const HomeHeader = () => {
+const HomeHeader = ({navigation}) => {
     const context = useContext(AppContext);
 
     return (
         <View style={styles.container}>
             <Text style={appTheme.FONTS.largeTitle}>Accueil</Text>
             {context.loggedIn ?
-                <TouchableOpacity style={styles.redRounded}>
-                    <Text style={appTheme.FONTS.body3}>Connexion/inscription</Text>
-                </TouchableOpacity> :
                 <TouchableOpacity style={styles.greyRounded}>
                     <Text style={appTheme.FONTS.body3}>10 jetons</Text>
+                </TouchableOpacity> :
+                <TouchableOpacity style={styles.redRounded} onPress={() => navigation.navigate('ConnectionStack', {screen: 'Login'})}>
+                    <Text style={appTheme.FONTS.body3}>Connexion/inscription</Text>
                 </TouchableOpacity>
             }
         </View>

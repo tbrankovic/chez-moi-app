@@ -1,4 +1,5 @@
 import { Dimensions } from 'react-native';
+import { useFonts } from 'expo-font';
 const { width, height } = Dimensions.get("window");
 
 export const COLORS = {
@@ -49,16 +50,16 @@ export const SIZES = {
 export const FONTS = {
     largeTitle: { fontFamily: "Bodoni 72", fontSize: SIZES.largeTitle, color: COLORS.secondary},
     smallTitle: { fontFamily: "Bodoni 72", fontSize: SIZES.smallTitle, color: COLORS.secondary},
-    h1: { fontFamily: "Rubik Bold", fontSize: SIZES.h1, color: COLORS.secondary},
-    h2: { fontFamily: "Rubik Regular", fontSize: SIZES.h2, color: COLORS.secondary},
-    h3: { fontFamily: "Rubik Regular", fontSize: SIZES.h3, color: COLORS.secondary},
-    h4: { fontFamily: "Rubik Regular", fontSize: SIZES.h4, color: COLORS.secondary, fontWeight: 'bold'},
-    body1: { fontFamily: "Rubik Regular", fontSize: SIZES.body1, color: COLORS.secondary},
-    body2: { fontFamily: "Rubik Regular", fontSize: SIZES.body2, color: COLORS.secondary},
-    body3: { fontFamily: "Rubik Regular", fontSize: SIZES.body3, color: COLORS.secondary},
-    body4: { fontFamily: "Rubik Regular", fontSize: SIZES.body4, color: COLORS.secondary},
-    body5: { fontFamily: "Rubik Regular", fontSize: SIZES.body5, color: COLORS.dark5},
-    body6: { fontFamily: "Rubik Regular", fontSize: SIZES.body6, color: COLORS.secondary}
+    h1: { fontFamily: "Rubik_700Bold", fontSize: SIZES.h1, color: COLORS.secondary},
+    h2: { fontFamily: "Rubik_400Regular", fontSize: SIZES.h2, color: COLORS.secondary},
+    h3: { fontFamily: "Rubik_400Regular", fontSize: SIZES.h3, color: COLORS.secondary},
+    h4: { fontFamily: "Rubik_700Bold", fontSize: SIZES.h4, color: COLORS.secondary},
+    body1: { fontFamily: "Rubik_400Regular", fontSize: SIZES.body1, color: COLORS.secondary},
+    body2: { fontFamily: "Rubik_400Regular", fontSize: SIZES.body2, color: COLORS.secondary},
+    body3: { fontFamily: "Rubik_400Regular", fontSize: SIZES.body3, color: COLORS.secondary},
+    body4: { fontFamily: "Rubik_400Regular", fontSize: SIZES.body4, color: COLORS.secondary},
+    body5: { fontFamily: "Rubik_400Regular", fontSize: SIZES.body5, color: COLORS.dark5},
+    body6: { fontFamily: "Rubik_400Regular", fontSize: SIZES.body6, color: COLORS.secondary}
 }
 
 const appTheme = { COLORS, SIZES, FONTS };
