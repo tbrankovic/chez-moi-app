@@ -1,16 +1,15 @@
 import React from 'react';
 import { Image } from 'react-native';
 import {createStackNavigator} from "@react-navigation/stack";
-
-import { Home, Details } from '../screens';
+import { Login, SignUp } from '../screens';
 import { leftArrow } from "../constants/icons";
 import { COLORS, FONTS } from "../constants";
 
-const HomeStack = createStackNavigator();
+const Stack = createStackNavigator();
 
-export function HomeStackScreen() {
+export function ConnectionStack() {
     return (
-        <HomeStack.Navigator
+        <Stack.Navigator
             screenOptions={{
                 headerStyle: {
                     backgroundColor: COLORS.dark2,
@@ -33,11 +32,8 @@ export function HomeStackScreen() {
                 }
             }}
         >
-            <HomeStack.Screen name="Home" component={Home} />
-            <HomeStack.Screen name="Details"
-                              component={Details}
-                              options={({ route }) => ({ title: 'Chez ' + route.params.name })}
-            />
-        </HomeStack.Navigator>
+            <Stack.Screen name="Login" component={Login} />
+            <Stack.Screen name="SignUp" component={SignUp} />
+        </Stack.Navigator>
     )
 }
