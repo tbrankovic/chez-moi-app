@@ -1,7 +1,8 @@
 import React from 'react';
-import { Text, View, StyleSheet, TouchableOpacity, Image, Button } from 'react-native';
+import {Text, View, StyleSheet, TouchableOpacity, Image, Button, ScrollView} from 'react-native';
 import { COLORS, SIZES, FONTS, icons, images } from '../constants'
 import {DetailsHeader} from "../components/headers/DetailsHeader";
+import {SmallInput} from "../components/SmallInput";
 
 function reserve() {
 
@@ -10,15 +11,18 @@ const Details = ({navigation}) => {
     return (
         <View style={styles.container}>
             <DetailsHeader navigation={navigation} />
-            <Image style={styles.roundImage} source={images.pizzaSlice} />
-            <Text style={[FONTS.h1, textStyles.header]}>Pates</Text>
-            <Text style={[FONTS.body3, {marginTop: 8}]}>Assiette</Text>
-            <Text style={[FONTS.body3, {color: COLORS.dark5, marginTop: 8}]}>Lorem ipsum dolor sit amet, at eam rebum audire voluptua, mutat lorem ullamcorper ad eum, no brute nostro mei.</Text>
-            <Text style={[FONTS.body3, textStyles.subheader]}>Heure de réservation</Text>
-            <Text style={[FONTS.body3, textStyles.subheader]}>Modalité</Text>
-            <TouchableOpacity style={styles.btnPrimary} title="Réserver" onPress={reserve}>
-                <Text style={[FONTS.body1, {justifyContent: 'center'}]}>Réserver</Text>
-            </TouchableOpacity>
+            <ScrollView>
+                <Image style={styles.roundImage} source={images.pizzaSlice} />
+                <Text style={[FONTS.h1, textStyles.header]}>Pates</Text>
+                <Text style={[FONTS.body3, {marginTop: 8}]}>Assiette</Text>
+                <Text style={[FONTS.body3, {color: COLORS.dark5, marginTop: 8}]}>Lorem ipsum dolor sit amet, at eam rebum audire voluptua, mutat lorem ullamcorper ad eum, no brute nostro mei.</Text>
+                <Text style={[FONTS.body3, textStyles.subheader]}>Heure de réservation</Text>
+                <SmallInput />
+                <Text style={[FONTS.body3, textStyles.subheader]}>Modalité</Text>
+                <TouchableOpacity style={[styles.btnPrimary, {marginTop: 16}]} title="Réserver" onPress={reserve}>
+                    <Text style={[FONTS.body1, {justifyContent: 'center'}]}>Réserver</Text>
+                </TouchableOpacity>
+            </ScrollView>
         </View>
     )
 }

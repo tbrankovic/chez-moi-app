@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View, TouchableOpacity, Dimensions, StyleSheet, Image } from 'react-native';
-import appTheme, {COLORS, FONTS} from "../constants/theme";
-import images from "../constants/images";
+import appTheme, {COLORS, FONTS} from "../../constants/theme";
+import images from "../../constants/images";
 
 export class OfferCell extends React.Component {
     render() {
