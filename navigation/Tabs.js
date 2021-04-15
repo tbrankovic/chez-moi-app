@@ -18,6 +18,7 @@ const Tabs = () => {
             backgroundColor: COLORS.dark1,
 
             style: {
+                borderTopWidth: 0,
                 width: SIZES.width - 32,
                 height: 64,
 
@@ -69,7 +70,7 @@ const Tabs = () => {
                             )
                         }}
             />
-            <Tab.Screen name="Réservations"
+            <Tab.Screen name="Reservations"
                         component={Reservations}
                         options={{
                             tabBarIcon: ({focused}) => (

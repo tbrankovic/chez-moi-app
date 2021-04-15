@@ -21,12 +21,12 @@ export default class CustomSearchBar extends React.Component {
                 onChangeText={this.updateSearch}
                 value={search}
                 placeholderTextColor={COLORS.dark5}
-                containerStyle={{
+                containerStyle={[styles.shadow, {
                     backgroundColor: 'transparent',
                     borderTopColor: 'transparent',
                     borderBottomColor: 'transparent',
                     paddingHorizontal: 0
-                }}
+                }]}
                 inputContainerStyle={{
                     backgroundColor: COLORS.dark3,
                     borderRadius: 6
@@ -49,5 +49,16 @@ export default class CustomSearchBar extends React.Component {
 const styles = StyleSheet.create({
     container: {
         backgroundColor: 'transparent'
+    },
+    shadow: {
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 2,
+        },
+        shadowOpacity: 0.15,
+        shadowRadius: 14,
+
+        elevation: 5,
     }
 })

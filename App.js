@@ -19,7 +19,7 @@ export default function App() {
         Rubik_700Bold
     })
 
-    const [isLoggedIn, setIsLoggedIn] = useState(false)
+    const [isLoggedIn, setIsLoggedIn] = useState(true)
     const toggleIsLoggedIn = () => {
         isLoggedIn ? setIsLoggedIn(false) : setIsLoggedIn(true)
     }

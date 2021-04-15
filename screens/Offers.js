@@ -1,11 +1,13 @@
 import React, { useContext } from 'react';
 import { Text, View, StyleSheet, TouchableOpacity, Image, FlatList } from 'react-native';
 import { COLORS, SIZES, FONTS, icons, images } from '../constants'
-import { OfferCell } from "../components/OfferCell";
+import { OfferCell } from "../components/cells/OfferCell";
 import {useNavigation} from "@react-navigation/core";
 import {OffersHeader} from "../components/headers/OffersHeader";
 import AppContext from "../components/AppContext";
 import {NotConnectedView} from "../components/NotConnectedView";
+import {NewOfferCell} from "../components/cells/NewOfferCell";
+import {ArchivedOfferCell} from "../components/cells/ArchivedOfferCell";
 
 const testData = require('../test/data.json');
 
@@ -24,8 +26,9 @@ const Offers = () => {
                         username="Username"
                         foodname="Lasagna"
                         navigation={navigation}/>
+                    <NewOfferCell navigation={navigation}/>
                     <Text style={[FONTS.body5, {marginTop: 8}]}>ARCHIVÉS</Text>
-
+                    <ArchivedOfferCell />
                 </View> :
                 <NotConnectedView/>
             }
