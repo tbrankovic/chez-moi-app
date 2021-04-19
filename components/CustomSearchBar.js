@@ -20,7 +20,7 @@ export default class CustomSearchBar extends React.Component {
                 placeholder="Chercher.."
                 onChangeText={this.updateSearch}
                 value={search}
-                placeholderTextColor={COLORS.dark5}
+                placeholderTextColor={COLORS.grey5}
                 containerStyle={[styles.shadow, {
                     backgroundColor: 'transparent',
                     borderTopColor: 'transparent',
@@ -28,17 +28,17 @@ export default class CustomSearchBar extends React.Component {
                     paddingHorizontal: 0
                 }]}
                 inputContainerStyle={{
-                    backgroundColor: COLORS.dark3,
+                    backgroundColor: COLORS.grey3,
                     borderRadius: 6
                 }}
                 inputStyle={{
                     color: COLORS.secondary
                 }}
                 searchIcon={{
-                    color: COLORS.dark5
+                    color: COLORS.grey5
                 }}
                 clearIcon={{
-                    color: COLORS.dark5
+                    color: COLORS.grey5
                 }}
                 platform="default"
             />

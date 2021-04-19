@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     card: {
         marginTop: 12,
         padding: 16,
-        backgroundColor: appTheme.COLORS.dark1,
+        backgroundColor: appTheme.COLORS.grey1,
         borderRadius: 20,
         flexDirection: 'column',
         alignItems: 'center',

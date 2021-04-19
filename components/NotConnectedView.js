@@ -29,10 +29,10 @@ const styles = StyleSheet.create({
     },
     megaTitle: {
         fontSize: 100,
-        color: COLORS.dark3
+        color: COLORS.grey3
     },
     info: {
-        color: COLORS.dark5
+        color: COLORS.grey5
     },
     btnPrimary: {
         justifyContent: 'center',

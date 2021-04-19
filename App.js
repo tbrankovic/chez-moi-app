@@ -37,7 +37,7 @@ export default function App() {
             <AppContext.Provider value={userSettings}>
                 <NavigationContainer>
                     <StatusBar barStyle="light-content"/>
-                    <Stack.Navigator screenOptions={{headerShown: false, cardStyle: {backgroundColor: COLORS.dark2}}}
+                    <Stack.Navigator screenOptions={{headerShown: false, cardStyle: {backgroundColor: COLORS.grey2}}}
                                      initialRouteName={"Tabs"}
                     >
                         <Stack.Screen name="Tabs" component={Tabs}/>

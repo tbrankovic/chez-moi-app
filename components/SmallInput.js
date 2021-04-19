@@ -10,7 +10,7 @@ export const SmallInput = (props) => {
             onChangeText={onChangeText}
             value={text}
             placeholder={props.placeholder}
-            placeholderTextColor={COLORS.dark5}
+            placeholderTextColor={COLORS.grey5}
             style={[FONTS.body2, styles.input, styles.shadow]}
         />
     )
@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     input: {
         width: 150,
         height: 32,
-        backgroundColor: COLORS.dark3,
+        backgroundColor: COLORS.grey3,
         borderRadius: 6,
         color: COLORS.secondary,
         textAlign: 'center',

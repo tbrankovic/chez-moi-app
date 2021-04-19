@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     cell: {
         marginTop: 12,
         padding: 16,
-        backgroundColor: appTheme.COLORS.dark1,
+        backgroundColor: appTheme.COLORS.grey1,
         borderRadius: 20,
         flexDirection: 'row',
         alignItems: 'center',

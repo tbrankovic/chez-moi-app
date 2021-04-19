@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
         marginTop: 12,
         padding: 8,
         paddingLeft: 16,
-        backgroundColor: appTheme.COLORS.dark1,
+        backgroundColor: appTheme.COLORS.grey1,
         borderRadius: 20,
         flexDirection: 'row',
         alignItems: 'center',
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
         alignSelf: 'stretch',
     },
     priceTag: {
-        backgroundColor: COLORS.dark2,
+        backgroundColor: COLORS.grey2,
         borderRadius: 12,
         padding: 6,
         paddingLeft: 20,

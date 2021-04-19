@@ -15,7 +15,7 @@ const Tabs = () => {
             shadowColor: 'transparent',
             activeTintColor: COLORS.primary,
             inactiveTintColor: COLORS.secondary,
-            backgroundColor: COLORS.dark1,
+            backgroundColor: COLORS.grey1,
 
             style: {
                 borderTopWidth: 0,
@@ -27,7 +27,7 @@ const Tabs = () => {
                 left: '50%',
                 marginLeft: SIZES.width / -2 + 16,
 
-                backgroundColor: COLORS.dark2,
+                backgroundColor: COLORS.grey2,
                 borderRadius: SIZES.radius2,
                 shadowColor: "#000",
                 shadowOffset: {

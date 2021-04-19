@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
         borderRadius: 99
     },
     greyRounded: {
-        backgroundColor: appTheme.COLORS.dark1,
+        backgroundColor: appTheme.COLORS.grey1,
         padding: 8,
         paddingLeft: 10,
         paddingRight: 10,

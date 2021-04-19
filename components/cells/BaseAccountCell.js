@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
         marginTop: 12,
         padding: 8,
         paddingLeft: 16,
-        backgroundColor: appTheme.COLORS.dark1,
+        backgroundColor: appTheme.COLORS.grey1,
         borderRadius: 20,
         flexDirection: 'row',
         alignItems: 'center',

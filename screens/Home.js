@@ -34,7 +34,7 @@ const styles =  StyleSheet.create({
         flex: 1,
         padding: 16,
         paddingTop: 32,
-        backgroundColor: COLORS.dark2
+        backgroundColor: COLORS.grey2
     },
     list: {
         height: '100%',

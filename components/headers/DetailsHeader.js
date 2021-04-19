@@ -1,7 +1,6 @@
 import React from 'react';
-import { Text, View, TouchableOpacity, Dimensions, StyleSheet, Image } from 'react-native';
-import appTheme, {FONTS} from "../../constants/theme";
-import images from "../../constants/images";
+import { Text, View, TouchableOpacity, StyleSheet, Image } from 'react-native';
+import { FONTS } from "../../constants";
 import icons from "../../constants/icons";
 
 export class DetailsHeader extends React.Component {
@@ -14,7 +13,7 @@ export class DetailsHeader extends React.Component {
                         height: 28,
                     }}/>
                 </TouchableOpacity>
-                <Text style={[appTheme.FONTS.smallTitle, {alignSelf: 'center'}]}>Chez Mark</Text>
+                <Text style={[FONTS.smallTitle, {alignSelf: 'center'}]}>Chez Mark</Text>
                 <View style={{width: 28, height: 28}}/>
             </View>
         )
@@ -28,10 +27,5 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignItems: 'center',
         alignSelf: 'stretch'
-    },
-    redRounded: {
-        backgroundColor: appTheme.COLORS.red1,
-        padding: 8,
-        borderRadius: 99
-    },
+    }
 })

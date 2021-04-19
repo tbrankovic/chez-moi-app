@@ -12,7 +12,7 @@ const Login = ({navigation}) => {
             <DefaultBackHeader title="Connexion" navigation={navigation} />
             <Text style={[FONTS.body1, {color: COLORS.secondary, marginTop: 32}]}>Reconnectez-vous pour avoir accès à tous les plats délicieux du réseau.</Text>
             <View>
-                <Text style={[FONTS.body1, {color: COLORS.dark5}]}>Vous recevrez un lien dans votre boîte mail qui vous connectera sans mot de passe.</Text>
+                <Text style={[FONTS.body1, {color: COLORS.grey5}]}>Vous recevrez un lien dans votre boîte mail qui vous connectera sans mot de passe.</Text>
                 <TouchableOpacity style={styles.btnPrimary} onPress={reserve}>
                     <Text style={[FONTS.body1, {justifyContent: 'center'}]}>Envoyer le lien de connexion</Text>
                 </TouchableOpacity>
@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
         flex: 1,
         padding: 16,
         paddingTop: 32,
-        backgroundColor: COLORS.dark2
+        backgroundColor: COLORS.grey2
     },
     roundImage: {
         width: 250,

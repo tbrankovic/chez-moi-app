@@ -16,7 +16,7 @@ const styles =  StyleSheet.create({
         flex: 1,
         padding: 16,
         paddingTop: 32,
-        backgroundColor: COLORS.dark1
+        backgroundColor: COLORS.grey1
     }
 })
 

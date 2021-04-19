@@ -13,7 +13,7 @@ export function HomeStackScreen() {
         <HomeStack.Navigator
             screenOptions={{
                 headerStyle: {
-                    backgroundColor: COLORS.dark2,
+                    backgroundColor: COLORS.grey2,
                     shadowColor: 'transparent'
                 },
                 headerShown: false,
@@ -47,7 +47,7 @@ export function OffersStackScreen() {
         <HomeStack.Navigator
             screenOptions={{
                 headerStyle: {
-                    backgroundColor: COLORS.dark2,
+                    backgroundColor: COLORS.grey2,
                     shadowColor: 'transparent'
                 },
                 headerShown: false,

@@ -14,9 +14,9 @@ export class OfferCell extends React.Component {
                     <Image source={images.pasta} style={styles.roundImage}/>
                     <View style={styles.infoContainer}>
                         <Text style={[FONTS.h4, {color: COLORS.secondary}]}>Lasagne</Text>
-                        <Text style={[FONTS.body3, {color: COLORS.dark5, marginTop: 4}]}>2 plats restants</Text>
-                        <Text style={[FONTS.body3, {color: COLORS.dark5}]}>3 plats vendus</Text>
-                        <Text style={[FONTS.body3, {color: COLORS.dark5, marginTop: 4}]}>10h00-18h00</Text>
+                        <Text style={[FONTS.body3, {color: COLORS.grey5, marginTop: 4}]}>2 plats restants</Text>
+                        <Text style={[FONTS.body3, {color: COLORS.grey5}]}>3 plats vendus</Text>
+                        <Text style={[FONTS.body3, {color: COLORS.grey5, marginTop: 4}]}>10h00-18h00</Text>
                     </View>
                 </TouchableOpacity>
             </View>
@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     cell: {
         marginTop: 12,
         padding: 16,
-        backgroundColor: appTheme.COLORS.dark1,
+        backgroundColor: appTheme.COLORS.grey1,
         borderRadius: 20,
         flexDirection: 'row',
         alignItems: 'center',
