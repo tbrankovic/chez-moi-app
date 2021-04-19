@@ -9,7 +9,7 @@ export class NewOfferCell extends React.Component {
             <View style={{width: '100%'}}>
                 <TouchableOpacity
                     style={styles.cell}
-                    onPress={() => this.props.navigation.navigate('Home')}
+                    onPress={() => this.props.navigation.navigate('PostNewOffer')}
                 >
                     <Text style={[FONTS.h4, styles.cellText]}>+ Ajouter un nouveau plat</Text>
                 </TouchableOpacity>

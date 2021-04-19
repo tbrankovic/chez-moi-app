@@ -4,7 +4,7 @@ import {createBottomTabNavigator, BottomTabBar } from "@react-navigation/bottom-
 
 import {Home, Offers, Reservations, Account } from '../screens';
 import { COLORS, SIZES, icons } from '../constants'
-import { HomeStackScreen } from './Stacks'
+import {HomeStackScreen, OffersStackScreen} from './Stacks'
 
 const Tab = createBottomTabNavigator();
 
@@ -56,7 +56,7 @@ const Tabs = () => {
                         }}
             />
             <Tab.Screen name="Offres"
-                        component={Offers}
+                        component={OffersStackScreen}
                         options={{
                             tabBarIcon: ({focused}) => (
                                 <Image source={icons.tray}
