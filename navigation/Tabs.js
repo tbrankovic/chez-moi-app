@@ -28,7 +28,7 @@ const Tabs = () => {
                 marginLeft: SIZES.width / -2 + 16,
 
                 backgroundColor: COLORS.grey2,
-                borderRadius: SIZES.radius2,
+                borderRadius: SIZES.radius13,
                 shadowColor: "#000",
                 shadowOffset: {
                     width: 0,

@@ -8,6 +8,7 @@ import AppContext from "../components/AppContext";
 import {NotConnectedView} from "../components/NotConnectedView";
 import {NewOfferCell} from "../components/cells/NewOfferCell";
 import {ArchivedOfferCell} from "../components/cells/ArchivedOfferCell";
+import PageHeader from "../components/organisms/PageHeader";
 
 const testData = require('../test/data.json');
 
@@ -18,7 +19,7 @@ const Offers = () => {
 
     return (
         <View style={styles.container}>
-            <OffersHeader/>
+            <PageHeader title="Mes plats" />
             {context.loggedIn ?
                 <View>
                     <Text style={FONTS.body5}>ACTIFS</Text>

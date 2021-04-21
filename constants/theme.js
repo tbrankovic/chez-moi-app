@@ -70,7 +70,9 @@ export const FONTS = {
     h4reg:          { fontFamily: "Rubik_400Regular", fontSize: SIZES.h4, color: COLORS.secondary },
     h4regGrey:      { fontFamily: "Rubik_400Regular", fontSize: SIZES.h4, color: COLORS.grey2 },
     body3Primary:   { fontFamily: "Rubik_400Regular", fontSize: SIZES.body3, color: COLORS.primary },
-    body3Grey:      { fontFamily: "Rubik_400Regular", fontSize: SIZES.body3, color: COLORS.grey5 }
+    body3Grey:      { fontFamily: "Rubik_400Regular", fontSize: SIZES.body3, color: COLORS.grey5 },
+    body5Grey:      { fontFamily: "Rubik_400Regular", fontSize: SIZES.body5, color: COLORS.grey4 },
+
 }
 
 export const MARGINS = {

@@ -1,30 +1,38 @@
 import React from 'react';
 import { Text, View, StyleSheet, TouchableOpacity, Image, FlatList, ScrollView, Button } from 'react-native';
 import { COLORS, SIZES, FONTS, icons, images } from '../constants'
-import { Custom1Card } from "../components/HomeComponents";
-import HomeHeader from "../components/headers/HomeHeader";
-import CustomSearchBar from "../components/CustomSearchBar";
+import HomeHeader from "../components/molecules/HomeHeader";
+import CustomSearchBar from "../components/atoms/CustomSearchBar";
+import FoodCard from "../components/molecules/FoodCard";
+import PageHeader from "../components/organisms/PageHeader";
 
 const testData = require('../test/data.json');
 
 const Home = ({ navigation }) => {
+    const renderItem = ({ item }) => {
+        return (
+            <FoodCard key={item.id}
+                      username={item.username}
+                      food={item.food}
+                      portion="portion"
+                      distance="2,3"
+                      imageSource={images.pizzaSlice}
+                      navigation={navigation}
+            />
+        )
+    }
+
     return (
         <View style={styles.container}>
-            <HomeHeader navigation={navigation} />
+            <PageHeader title="Accueil" navigation={navigation} />
             <CustomSearchBar />
-            <ScrollView>
-                <View style={styles.list}>
-                    { testData.map((d) => {
-                        return (
-                            <Custom1Card key={d.id}
-                                         username={d.username}
-                                         foodname={d.foodname}
-                                         navigation={navigation}
-                                        />
-                        )
-                    }) }
-                </View>
-            </ScrollView>
+            <FlatList style={styles.list}
+                      data={testData}
+                      renderItem={renderItem}
+                      keyExtractor={item => item.id}
+                      columnWrapperStyle={{justifyContent: 'space-between'}}
+                      numColumns={2}
+            />
         </View>
     )
 }
@@ -37,11 +45,8 @@ const styles =  StyleSheet.create({
         backgroundColor: COLORS.grey2
     },
     list: {
-        height: '100%',
-        flex: 1,
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        flexWrap: 'wrap'
+        borderRadius: 20,
+        marginBottom: 92
     },
 })
 

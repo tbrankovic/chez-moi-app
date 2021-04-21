@@ -3,18 +3,18 @@ import {View, TouchableOpacity, Text, StyleSheet, Dimensions} from "react-native
 import { COLORS, FONTS, MARGINS } from "../../constants";
 import { RoundedImage } from "../atoms";
 
-const FoodCard = ({username, image, food, portion, distance}) => (
+const FoodCard = (props) => (
     <TouchableOpacity
-        onPress={() => this.props.navigation.navigate('Details', {name: this.props.username})}
+        onPress={() => props.navigation.navigate('Details', {name: props.username})}
         style={styles.card}
     >
-        <Text style={ FONTS.smallTitle }>Chez {username}</Text>
-        <RoundedImage source={image} size={130} />
+        <Text style={[ FONTS.smallTitle, MARGINS.mb8 ]}>Chez {props.username}</Text>
+        <RoundedImage source={props.imageSource} size={130} />
 
         <View style={ styles.infoContainer }>
-            <Text style={[ FONTS.h4, MARGINS.mb4 ]}>{food}</Text>
-            <Text style={[ FONTS.body3, MARGINS.mb4 ]}>{portion}</Text>
-            <Text style={ FONTS.body5 }>{distance}</Text>
+            <Text style={[ FONTS.h4, MARGINS.mb4 ]}>{props.food}</Text>
+            <Text style={[ FONTS.body3, MARGINS.mb4 ]}>{props.portion}</Text>
+            <Text style={ FONTS.body5Grey }>{props.distance} km</Text>
         </View>
     </TouchableOpacity>
 )
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'flex-start',
         alignSelf: 'stretch',
-        width: (Dimensions.get('window').width - 3 * 8) / 2,
+        width: (Dimensions.get('window').width - 3 * 16) / 2,
     }
 });
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet } from "react-native";
 import { SearchBar } from 'react-native-elements';
-import {COLORS} from "../constants";
+import {COLORS} from "../../constants";
 
 export default class CustomSearchBar extends React.Component {
     state = {

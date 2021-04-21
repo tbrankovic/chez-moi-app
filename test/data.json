@@ -2,31 +2,31 @@
   {
     "id": 1,
     "username": "Mark",
-    "foodname": "Lasagne"
+    "food": "Lasagne"
   },
   {
     "id": 2,
     "username": "Antoine",
-    "foodname": "Pizza"
+    "food": "Pizza"
   },
   {
     "id": 3,
     "username": "Tristan",
-    "foodname": "Pates"
+    "food": "Pates"
   },
   {
     "id": 4,
-    "username": "Tristan",
-    "foodname": "Pates"
+    "username": "Lucas",
+    "food": "Pates"
   },
   {
     "id": 5,
-    "username": "Tristan",
-    "foodname": "Pates"
+    "username": "Max",
+    "food": "Gnoccis"
   },
   {
     "id": 6,
-    "username": "Tristan",
-    "foodname": "Pates"
+    "username": "Julie",
+    "food": "Salade niceoise"
   }
 ]

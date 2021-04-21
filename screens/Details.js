@@ -6,14 +6,16 @@ import {SmallInput} from "../components/SmallInput";
 import BigRedButton from "../components/atoms/BigRedButton";
 import RoundedImage from "../components/atoms/RoundedImage";
 import FoodInfo from "../components/molecules/FoodInfo";
+import DetailsPageHeader from "../components/organisms/DetailsPageHeader";
 
 function reserve() {
 
 }
-const Details = ({navigation}) => {
+const Details = ({route, navigation}) => {
+
     return (
         <View style={styles.container}>
-            <DetailsHeader navigation={navigation} />
+            <DetailsPageHeader username={route.params.name} navigation={navigation} />
             <ScrollView>
                 <FoodInfo image={images.pizzaSlice}
                           name={'Pates'}
@@ -22,7 +24,7 @@ const Details = ({navigation}) => {
                 />
 
                 <Text style={[ FONTS.body3Primary, MARGINS.mt8 ]}>Heure de réservation</Text>
-                <SmallInput />
+                <SmallInput placeholder="18h00" />
 
                 <Text style={[ FONTS.body3Primary, MARGINS.mt8 ]}>Modalité</Text>
                 <Text style={FONTS.body5}>N/A</Text>

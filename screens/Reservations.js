@@ -2,11 +2,12 @@ import React from 'react';
 import { Text, View, StyleSheet, TouchableOpacity, Image, FlatList } from 'react-native';
 import { COLORS, SIZES, FONTS, icons, images } from '../constants'
 import {ReservationHeader} from "../components/headers/ReservationHeader";
+import PageHeader from "../components/organisms/PageHeader";
 
 const Reservations = () => {
     return (
         <View style={styles.container}>
-            <ReservationHeader />
+            <PageHeader title="Réservations" />
         </View>
     )
 }
