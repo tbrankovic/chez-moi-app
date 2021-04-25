@@ -1,7 +1,7 @@
 import React from 'react';
 import {Text, View, StyleSheet, TouchableOpacity, Image, FlatList, ScrollView} from 'react-native';
 import { COLORS, SIZES, FONTS, icons, images } from '../constants'
-import {SmallInput} from "../components/SmallInput";
+import {SmallInput} from "../components/atoms/SmallInput";
 import {InfoSection} from "../components/molecules/InfoSection";
 import {BuyTokensCell} from "../components/cells/BuyTokensCell";
 import {BaseAccountCell} from "../components/cells/BaseAccountCell";

@@ -32,6 +32,7 @@ export const SIZES = {
     // font
     megaTitle: 100,
     largeTitle: 38,
+    mediumTitle: 28,
     smallTitle: 20,
     h1: 30,
     h2: 22,
@@ -52,6 +53,7 @@ export const SIZES = {
 export const FONTS = {
     // classic font styles
     largeTitle: { fontFamily: "Bodoni 72", fontSize: SIZES.largeTitle, color: COLORS.secondary },
+    mediumTitle: { fontFamily: "Bodoni 72", fontSize: SIZES.mediumTitle, color: COLORS.secondary },
     smallTitle: { fontFamily: "Bodoni 72", fontSize: SIZES.smallTitle, color: COLORS.secondary },
     h1:         { fontFamily: "Rubik_700Bold", fontSize: SIZES.h1, color: COLORS.secondary },
     h2:         { fontFamily: "Rubik_400Regular", fontSize: SIZES.h2, color: COLORS.secondary },
@@ -69,8 +71,10 @@ export const FONTS = {
     h1BoldPrimary:  { fontFamily: "Rubik_700Bold", fontSize: SIZES.h1, color: COLORS.primary },
     h4reg:          { fontFamily: "Rubik_400Regular", fontSize: SIZES.h4, color: COLORS.secondary },
     h4regGrey:      { fontFamily: "Rubik_400Regular", fontSize: SIZES.h4, color: COLORS.grey2 },
+    body1Primary:   { fontFamily: "Rubik_400Regular", fontSize: SIZES.body1, color: COLORS.primary },
     body3Primary:   { fontFamily: "Rubik_400Regular", fontSize: SIZES.body3, color: COLORS.primary },
     body3Grey:      { fontFamily: "Rubik_400Regular", fontSize: SIZES.body3, color: COLORS.grey5 },
+    body4Grey:      { fontFamily: "Rubik_400Regular", fontSize: SIZES.body4, color: COLORS.grey4 },
     body5Grey:      { fontFamily: "Rubik_400Regular", fontSize: SIZES.body5, color: COLORS.grey4 },
 
 }
@@ -79,11 +83,14 @@ export const MARGINS = {
     mt4: { marginTop: 4 },
     mt8: { marginTop: 8 },
     mt16: { marginTop: 16 },
+    mt32: { marginTop: 32 },
     mb4: { marginBottom: 4 },
     mb8: { marginBottom: 8 },
     mb16: { marginBottom: 16 },
+    mb32: { marginBottom: 32 },
     mtb8: { marginTop: 8, marginBottom: 8 },
-    mtb16: { marginTop: 16, marginBottom: 16 }
+    mtb16: { marginTop: 16, marginBottom: 16 },
+    mtb32: { marginTop: 32, marginBottom: 32 }
 }
 
 const appTheme = { COLORS, SIZES, FONTS, MARGINS };

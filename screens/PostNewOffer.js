@@ -2,15 +2,21 @@ import React from 'react';
 import {Text, View, StyleSheet, TouchableOpacity, Image, Button, ScrollView} from 'react-native';
 import { COLORS, SIZES, FONTS, icons, images } from '../constants'
 import {DetailsHeader} from "../components/headers/DetailsHeader";
-import {SmallInput} from "../components/SmallInput";
+import {SmallInput} from "../components/atoms/SmallInput";
+import RoundTabButton from "../components/atoms/RoundTabButton";
+import NewOfferCell from "../components/cells/NewOfferCell";
+import NewOfferForm from "../components/organisms/NewOfferForm";
+import NameFormSection from "../components/molecules/NameFormSection";
+import DetailsPageHeader from "../components/organisms/DetailsPageHeader";
 
 const PostNewOffer = ({navigation}) => {
     return (
         <View style={styles.container}>
-            <DetailsHeader navigation={navigation} />
-            <ScrollView>
+            <DetailsPageHeader title="Nouveau plat" navigation={navigation} />
 
-            </ScrollView>
+
+
+            <NewOfferForm/>
         </View>
     )
 }
@@ -22,31 +28,10 @@ const styles = StyleSheet.create({
         paddingTop: 32,
         backgroundColor: COLORS.grey2
     },
-    roundImage: {
-        width: 250,
-        height: 250,
-        borderRadius: 125,
-        alignSelf: 'center',
-        margin: 8
-    },
-    btnPrimary: {
-        justifyContent: 'center',
-        alignItems: 'center',
-        width: '100%',
-        height: 50,
-        borderRadius: SIZES.radius2,
-        backgroundColor: COLORS.primary
-    }
-})
-
-const textStyles =  StyleSheet.create({
-    header: {
-        color: COLORS.primary,
-        fontWeight: 'bold',
-    },
-    subheader: {
-        color: 'red',
-        marginTop: 8
+    bar: {
+        flex: 1,
+        flexDirection: 'row',
+        justifyContent: 'space-between'
     }
 })
 

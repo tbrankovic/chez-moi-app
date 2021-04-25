@@ -5,6 +5,8 @@ export const tray = require("../assets/icons/tray.png")
 export const user = require("../assets/icons/user.png")
 export const leftArrow = require("../assets/icons/leftArrow.png")
 export const rightArrow = require("../assets/icons/rightArrow.png")
+export const circleEmpty = require("../assets/icons/circleEmpty.png")
+export const circleFilled = require("../assets/icons/circleFilled.png")
 
 export default {
     heart,
@@ -13,5 +15,7 @@ export default {
     tray,
     user,
     leftArrow,
-    rightArrow
+    rightArrow,
+    circleEmpty,
+    circleFilled
 }

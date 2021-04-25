@@ -13,7 +13,7 @@ const DetailsPageHeader = (props) => {
                     height: 28,
                 }}/>
             </TouchableOpacity>
-            <Text style={[ FONTS.smallTitle, {alignSelf: 'center'} ]}>Chez {props.username}</Text>
+            <Text style={[ FONTS.smallTitle, {alignSelf: 'center'} ]}>{props.title}</Text>
             <View style={{width: 28, height: 28}}/>
         </View>
     )

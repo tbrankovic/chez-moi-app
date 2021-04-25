@@ -2,7 +2,7 @@ import React from 'react';
 import { Image } from 'react-native';
 import {createStackNavigator} from "@react-navigation/stack";
 
-import {Home, Details, PostNewOffer, Offers} from '../screens';
+import {Home, Details, PostNewOffer, ModifyOffer, Offers} from '../screens';
 import { leftArrow } from "../constants/icons";
 import { COLORS, FONTS } from "../constants";
 
@@ -68,6 +68,7 @@ export function OffersStackScreen() {
             }}
         >
             <HomeStack.Screen name="Offers" component={Offers} />
+            <HomeStack.Screen name="ModifyOffer" component={ModifyOffer} />
             <HomeStack.Screen name="PostNewOffer"
                               component={PostNewOffer}
                               options={({ route }) => ({ title: 'Nouveau plat' })}

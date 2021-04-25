@@ -1,6 +1,6 @@
 import React, { useState }  from 'react';
 import { TextInput, StyleSheet } from "react-native";
-import {COLORS, FONTS} from "../constants";
+import {COLORS, FONTS} from "../../constants";
 
 export const SmallInput = (props) => {
     const [text, onChangeText] = React.useState(null);
@@ -11,7 +11,8 @@ export const SmallInput = (props) => {
             value={text}
             placeholder={props.placeholder}
             placeholderTextColor={COLORS.grey5}
-            style={[FONTS.body2, styles.input, styles.shadow]}
+            keyboardType={props.keyboardType || 'default'}
+            style={[props.style, FONTS.body2, styles.input, styles.shadow]}
         />
     )
 }
@@ -24,7 +25,6 @@ const styles = StyleSheet.create({
         borderRadius: 6,
         color: COLORS.secondary,
         textAlign: 'center',
-        marginTop: 8
     },
     shadow: {
         shadowColor: "#000",

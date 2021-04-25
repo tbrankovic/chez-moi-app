@@ -6,5 +6,6 @@ import Details from './Details';
 import Login from "./Login";
 import SignUp from "./SignUp";
 import PostNewOffer from "./PostNewOffer";
+import ModifyOffer from "./ModifyOffer";
 
-export { Home, Offers, Reservations, Account, Details, Login, SignUp, PostNewOffer }
+export { Home, Offers, Reservations, Account, Details, Login, SignUp, PostNewOffer, ModifyOffer }
