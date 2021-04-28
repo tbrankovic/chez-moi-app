@@ -5,16 +5,21 @@ import { RoundedImage } from "../atoms";
 
 const FoodCard = (props) => (
     <TouchableOpacity
-        onPress={() => props.navigation.navigate('Details', {name: props.username})}
+        onPress={() => props.navigation.navigate('Details', {
+            name: props.username,
+            source: props.imageSource,
+            food: props.food,
+            portion: props.portion
+        })}
         style={styles.card}
     >
         <Text style={[ FONTS.smallTitle, MARGINS.mb8 ]}>Chez {props.username}</Text>
         <RoundedImage source={props.imageSource} size={130} />
 
         <View style={ styles.infoContainer }>
-            <Text style={[ FONTS.h4, MARGINS.mb4 ]}>{props.food}</Text>
-            <Text style={[ FONTS.body3, MARGINS.mb4 ]}>{props.portion}</Text>
-            <Text style={ FONTS.body5Grey }>{props.distance} km</Text>
+            <Text style={[ FONTS.h4, MARGINS.mt4 ]}>{props.food}</Text>
+            <Text style={[ FONTS.body3, MARGINS.mt4 ]}>{props.portion}</Text>
+            <Text style={[ FONTS.body5Grey, MARGINS.mt4 ]}>{props.distance} km</Text>
         </View>
     </TouchableOpacity>
 )

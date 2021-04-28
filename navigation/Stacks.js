@@ -2,7 +2,7 @@ import React from 'react';
 import { Image } from 'react-native';
 import {createStackNavigator} from "@react-navigation/stack";
 
-import {Home, Details, PostNewOffer, ModifyOffer, Offers} from '../screens';
+import {Home, Details, PostNewOffer, ModifyOffer, Offers, Reservations, ReservationDetails} from '../screens';
 import { leftArrow } from "../constants/icons";
 import { COLORS, FONTS } from "../constants";
 
@@ -73,6 +73,37 @@ export function OffersStackScreen() {
                               component={PostNewOffer}
                               options={({ route }) => ({ title: 'Nouveau plat' })}
             />
+        </HomeStack.Navigator>
+    )
+}
+
+export function ReservationStackScreen() {
+    return (
+        <HomeStack.Navigator
+            screenOptions={{
+                headerStyle: {
+                    backgroundColor: COLORS.grey2,
+                    shadowColor: 'transparent'
+                },
+                headerShown: false,
+                headerBackTitleVisible: false,
+                headerBackImage: () =>
+                    <Image source={ leftArrow }
+                           style={{
+                               width: 28,
+                               height: 28,
+                               marginLeft: 12
+                           }}
+                    />,
+                headerTintColor: COLORS.secondary,
+                headerTitleStyle: {
+                    fontFamily: "Bodoni 72",
+                    fontSize: 26,
+                }
+            }}
+        >
+            <HomeStack.Screen name="Reservations" component={Reservations} />
+            <HomeStack.Screen name="ReservationDetails" component={ReservationDetails} />
         </HomeStack.Navigator>
     )
 }

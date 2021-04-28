@@ -2,17 +2,17 @@ import React from 'react';
 import { Text, View, TouchableOpacity, Dimensions, StyleSheet, Image } from 'react-native';
 import appTheme, {COLORS, FONTS} from "../../constants/theme";
 import images from "../../constants/images";
-import {BaseAccountCell} from "./BaseAccountCell";
+import {BaseAccountCell} from "../cells/BaseAccountCell";
 
 export const BuyTokensCell = (props) => {
     return (
         <View style={{width: '100%'}}>
             <TouchableOpacity
-                style={[styles.cell, styles.shadowInner]}
+                style={[styles.cell, styles.shadow]}
                 onPress={() => this.props.navigation.navigate('Home')}
             >
                 <Text style={FONTS.h4reg}>{props.title}</Text>
-                <View style={[styles.priceTag, styles.shadowInner]}>
+                <View style={[styles.priceTag, styles.shadow]}>
                     <Text style={[FONTS.h4reg, {color: 'red'}]}>{props.price}</Text>
                 </View>
             </TouchableOpacity>
@@ -21,14 +21,6 @@ export const BuyTokensCell = (props) => {
 }
 
 const styles = StyleSheet.create({
-    mtb4: {
-        marginTop: 8,
-        marginBottom: 8
-    },
-    mtb8: {
-        marginTop: 8,
-        marginBottom: 8
-    },
     infoContainer: {
         justifyContent: 'flex-start',
         width: '100%',
@@ -46,30 +38,19 @@ const styles = StyleSheet.create({
         alignSelf: 'stretch',
     },
     priceTag: {
-        backgroundColor: COLORS.grey2,
+        backgroundColor: COLORS.grey1,
         borderRadius: 12,
         padding: 6,
         paddingLeft: 20,
         paddingRight: 20
     },
-    shadowOuter: {
+    shadow: {
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
             height: 2,
         },
-        shadowOpacity: 0.25,
-        shadowRadius: 14,
-
-        elevation: 5,
-    },
-    shadowInner: {
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 2,
-        },
-        shadowOpacity: 0.3,
+        shadowOpacity: 0.2,
         shadowRadius: 8,
 
         elevation: 3,

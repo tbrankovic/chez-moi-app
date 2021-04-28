@@ -19,19 +19,6 @@ export const ManageFavoritesCell = (props) => {
 }
 
 const styles = StyleSheet.create({
-    mtb4: {
-        marginTop: 8,
-        marginBottom: 8
-    },
-    mtb8: {
-        marginTop: 8,
-        marginBottom: 8
-    },
-    infoContainer: {
-        justifyContent: 'flex-start',
-        width: '100%',
-        marginLeft: 8
-    },
     cell: {
         marginTop: 12,
         padding: 14,
@@ -43,31 +30,13 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
         alignSelf: 'stretch',
     },
-    priceTag: {
-        backgroundColor: COLORS.grey2,
-        borderRadius: 12,
-        padding: 6,
-        paddingLeft: 20,
-        paddingRight: 20
-    },
-    shadowOuter: {
-        shadowColor: "#000",
-        shadowOffset: {
-            width: 0,
-            height: 2,
-        },
-        shadowOpacity: 0.25,
-        shadowRadius: 14,
-
-        elevation: 5,
-    },
     shadowInner: {
         shadowColor: "#000",
         shadowOffset: {
             width: 0,
             height: 2,
         },
-        shadowOpacity: 0.3,
+        shadowOpacity: 0.2,
         shadowRadius: 8,
 
         elevation: 3,

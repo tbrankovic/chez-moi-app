@@ -12,14 +12,13 @@ export const SmallInput = (props) => {
             placeholder={props.placeholder}
             placeholderTextColor={COLORS.grey5}
             keyboardType={props.keyboardType || 'default'}
-            style={[props.style, FONTS.body2, styles.input, styles.shadow]}
+            style={[FONTS.body2, styles.input, styles.shadow, {width: 150}, props.style]}
         />
     )
 }
 
 const styles = StyleSheet.create({
     input: {
-        width: 150,
         height: 32,
         backgroundColor: COLORS.grey3,
         borderRadius: 6,

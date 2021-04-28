@@ -1,13 +1,17 @@
 import React from 'react'
-import {View, StyleSheet} from "react-native";
+import {View, StyleSheet, Text} from "react-native";
 import LargeInput from "../atoms/LargeInput";
-import {MARGINS} from "../../constants";
+import {FONTS, MARGINS} from "../../constants";
+import Stepper from "../atoms/Stepper";
 
 const FoodInfoFormSection = (props) => {
     return(
         <View style={[styles.container, props.style]}>
             <LargeInput placeholder="Portion (ex : assiette, tranche)"/>
-            <LargeInput placeholder="Quantité" keyboardType="numeric" style={MARGINS.mt16}/>
+            <View style={MARGINS.mt16}>
+                <Text style={[styles.text, FONTS.body2 ]}>Quantité</Text>
+                <Stepper style={MARGINS.mt8}/>
+            </View>
 
         </View>
     )
@@ -15,7 +19,11 @@ const FoodInfoFormSection = (props) => {
 
 const styles = StyleSheet.create({
     container: {
-        justifyContent: 'center'
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
+    text: {
+        textAlign: 'center'
     }
 })
 

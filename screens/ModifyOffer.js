@@ -17,6 +17,7 @@ import FoodInfo from "../components/molecules/FoodInfo";
 import DetailsPageHeader from "../components/organisms/DetailsPageHeader";
 import SegmentedControl from '@react-native-segmented-control/segmented-control';
 import {colors} from "react-native-elements";
+import Stepper from "../components/atoms/Stepper";
 
 function save() {
 
@@ -36,7 +37,7 @@ const ModifyOffer = ({route, navigation}) => {
                     />
 
                     <Text style={[ FONTS.body3Primary, MARGINS.mt8 ]}>Plats restants</Text>
-                    <SmallInput placeholder="18h00" keyboardType="numeric" style={MARGINS.mt8} />
+                    <Stepper style={MARGINS.mt8} />
 
                     <Text style={[ FONTS.body3Primary, MARGINS.mt8 ]}>Horaires</Text>
                     <View style={[ styles.horizontalContainer, MARGINS.mt8 ]}>

@@ -11,7 +11,7 @@ const HeaderStateButton = ({navigation}) => {
     return (
         <View>
             {context.loggedIn ?
-                <RoundedButton title="10 tokens"
+                <RoundedButton title="10 jetons"
                                onPress={() => navigation.navigate('ConnectionStack', {screen: 'Login'})}
                                backgroundColor={COLORS.grey1} />
                 :

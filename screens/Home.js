@@ -1,22 +1,23 @@
 import React from 'react';
 import { Text, View, StyleSheet, TouchableOpacity, Image, FlatList, ScrollView, Button } from 'react-native';
 import { COLORS, SIZES, FONTS, icons, images } from '../constants'
-import HomeHeader from "../components/molecules/HomeHeader";
 import CustomSearchBar from "../components/atoms/CustomSearchBar";
 import FoodCard from "../components/molecules/FoodCard";
 import PageHeader from "../components/organisms/PageHeader";
 
 const testData = require('../test/data.json');
 
+const testImages = [images.lasagna, images.smoothie, images.pasta, images.pizzaSlice, images.salad, images.quiche]
+
 const Home = ({ navigation }) => {
     const renderItem = ({ item }) => {
         return (
             <FoodCard key={item.id}
+                      imageSource={testImages[item.id - 1]}
                       username={item.username}
                       food={item.food}
-                      portion="portion"
-                      distance="2,3"
-                      imageSource={images.pizzaSlice}
+                      portion={item.portion}
+                      distance={item.distance}
                       navigation={navigation}
             />
         )
@@ -26,7 +27,7 @@ const Home = ({ navigation }) => {
         <View style={styles.container}>
             <PageHeader title="Accueil" navigation={navigation} />
             <CustomSearchBar />
-            <FlatList style={styles.list}
+            <FlatList style={[ styles.list ]}
                       data={testData}
                       renderItem={renderItem}
                       keyExtractor={item => item.id}

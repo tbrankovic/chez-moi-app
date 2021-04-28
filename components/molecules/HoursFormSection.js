@@ -3,7 +3,7 @@ import TimeSlider from "../atoms/TimeSilder";
 import {StyleSheet, Text, View} from "react-native";
 import {FONTS, MARGINS} from "../../constants";
 
-const endTime = 19
+const endTime = 22
 const startTime = () => {
     let hours = new Date().getHours()
     let mins = new Date().getMinutes()
@@ -39,6 +39,7 @@ const HoursFormSection = (props) => {
                         onValuesChange={sliderValueChange}
                         min={startTime()}
                         max={endTime}
+                        sliderLength={250}
             />
         </View>
     )

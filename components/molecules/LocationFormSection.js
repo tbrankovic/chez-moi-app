@@ -6,7 +6,7 @@ import {MARGINS} from "../../constants";
 const LocationFormSection = (props) => {
     return(
         <View style={[styles.container, props.style]}>
-            <LargeInput placeholder="Adresse"/>
+            <LargeInput placeholder="1 rue de Rivoli, Paris 75001"/>
 
         </View>
     )

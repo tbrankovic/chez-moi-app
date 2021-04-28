@@ -3,11 +3,10 @@ import MultiSlider from "@ptomasroos/react-native-multi-slider";
 import {COLORS} from "../../constants";
 
 const TimeSlider = (props) => {
-
     return (
         <MultiSlider values={props.values}
                      onValuesChange={props.onValuesChange}
-                     sliderLength={250}
+                     sliderLength={props.sliderLength}
                      min={props.min}
                      max={props.max}
                      step={0.25}

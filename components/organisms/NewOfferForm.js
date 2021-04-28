@@ -9,6 +9,7 @@ import FoodInfoFormSection from "../molecules/FoodInfoFormSection";
 import HoursFormSection from "../molecules/HoursFormSection";
 import ReservationTypeFormSection from "../molecules/ReservationTypeFormSection";
 import LocationFormSection from "../molecules/LocationFormSection";
+import PhotoSection from "../molecules/PhotoSection";
 
 const formTitles = ['Photo', 'Nom & Ingrédients', 'Portion & Quantité', 'Horaires', 'Modalité', 'Adresse']
 const arr = [1, 2, 3, 4, 5, 6]
@@ -37,7 +38,9 @@ class NewOfferForm extends React.Component {
     changePage() {
         switch(this.state.page) {
             case 1:
-                break
+                return (
+                    <PhotoSection style={styles.formPageHeight} />
+                )
             case 2:
                 return (
                     <NameFormSection style={styles.formPageHeight} />
@@ -94,7 +97,7 @@ class NewOfferForm extends React.Component {
                     <SecondaryButton title='←'
                                      onPress={() => this.prevPage()}
                                      style={{width: 50 }} />
-                    <BigRedButton title='suivant →'
+                    <BigRedButton title={this.state.page === arr.length ? 'publier ✓' : 'suivant →'}
                                   onPress={() => this.nextPage()}
                                   style={{width: Dimensions.get('window').width - 98, marginLeft: 16 }}
                     />

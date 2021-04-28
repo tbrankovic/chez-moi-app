@@ -2,31 +2,51 @@
   {
     "id": 1,
     "username": "Mark",
-    "food": "Lasagne"
+    "food": "Lasagne",
+    "image": "../assets/images/istockphoto-1096466528-612x612",
+    "portion": "tranche",
+    "distance": "2,3"
   },
   {
     "id": 2,
-    "username": "Antoine",
-    "food": "Pizza"
+    "username": "Hugo",
+    "food": "Smoothie",
+    "image": "../assets/images/istockphoto-1096466528-612x612",
+    "portion": "verre",
+    "distance": "1,2"
   },
   {
     "id": 3,
-    "username": "Tristan",
-    "food": "Pates"
+    "username": "Lucas",
+    "food": "Pâtes",
+    "image": "../assets/images/istockphoto-1096466528-612x612",
+    "portion": "assiette",
+    "distance": "6,7"
   },
   {
     "id": 4,
-    "username": "Lucas",
-    "food": "Pates"
+    "username": "Luigi",
+    "food": "Pizza",
+    "image": "../assets/images/istockphoto-1096466528-612x612",
+    "portion": "tranche",
+    "distance": "5,0"
   },
   {
     "id": 5,
-    "username": "Max",
-    "food": "Gnoccis"
+    "username": "Jade",
+    "food": "Salade Caesar",
+    "image": "../assets/images/istockphoto-1096466528-612x612",
+    "portion": "assiette",
+    "distance": "4,2"
+
   },
   {
     "id": 6,
-    "username": "Julie",
-    "food": "Salade niceoise"
+    "username": "Chloe",
+    "food": "Quiche Lorraine",
+    "image": "../assets/images/istockphoto-1096466528-612x612",
+    "portion": "tranche",
+    "distance": "4,6"
+
   }
 ]

@@ -13,12 +13,15 @@ const LargeInput = (props) => {
             placeholderTextColor={COLORS.grey5}
             multiline={props.multiline || false}
             keyboardType={props.keyboardType || 'default'}
+            blurOnSubmit={true}
             style={[props.style,
                     FONTS.body2,
                     styles.input,
                     styles.shadow,
                     {
-                        height: props.multiline ? 117 : 55
+                        height: props.multiline ? 117 : 55,
+                        paddingTop: props.multiline ? 12 : null,
+                        paddingBottom: props.multiline ? 12 : null
                     }]}
         />
     )
@@ -30,7 +33,7 @@ const styles = StyleSheet.create({
         backgroundColor: COLORS.grey3,
         borderRadius: 6,
         color: COLORS.secondary,
-        padding: 12
+        padding: 12,
     },
     shadow: {
         shadowColor: "#000",

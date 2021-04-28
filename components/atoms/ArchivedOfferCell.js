@@ -2,16 +2,17 @@ import React from 'react';
 import { Text, View, TouchableOpacity, Dimensions, StyleSheet, Image } from 'react-native';
 import appTheme, {COLORS, FONTS, MARGINS} from "../../constants/theme";
 import images from "../../constants/images";
-import {RoundedImage} from "../atoms";
+import {RoundedImage} from "./index";
 
 const ArchivedOfferCell = (props) => {
     return (
         <View style={[ props.style, {width: '100%'} ]}>
             <TouchableOpacity
                 style={styles.cell}
+                disabled={true}
                 onPress={() => props.navigation.navigate('Details', {name: 'moi'})}
             >
-                <RoundedImage source={images.pizzaSlice} size={92} />
+                <RoundedImage source={images.pasta} size={92} />
 
                 <View style={{marginLeft: 8, alignSelf: 'flex-start'}}>
                     <Text style={[ FONTS.h4 ]}>Pates</Text>

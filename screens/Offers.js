@@ -7,7 +7,7 @@ import {OffersHeader} from "../components/headers/OffersHeader";
 import AppContext from "../components/AppContext";
 import {NotConnectedView} from "../components/NotConnectedView";
 import NewOfferCell from "../components/cells/NewOfferCell";
-import ArchivedOfferCell from "../components/cells/ArchivedOfferCell";
+import ArchivedOfferCell from "../components/atoms/ArchivedOfferCell";
 import PageHeader from "../components/organisms/PageHeader";
 
 const testData = require('../test/data.json');

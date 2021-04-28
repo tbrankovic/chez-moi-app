@@ -7,7 +7,7 @@ export const leftArrow = require("../assets/icons/leftArrow.png")
 export const rightArrow = require("../assets/icons/rightArrow.png")
 export const circleEmpty = require("../assets/icons/circleEmpty.png")
 export const circleFilled = require("../assets/icons/circleFilled.png")
-
+export const camera = require("../assets/icons/camera.png")
 export default {
     heart,
     home,
@@ -17,5 +17,6 @@ export default {
     leftArrow,
     rightArrow,
     circleEmpty,
-    circleFilled
+    circleFilled,
+    camera
 }
