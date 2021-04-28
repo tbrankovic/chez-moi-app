@@ -30,9 +30,9 @@ const ModifyOffer = ({route, navigation}) => {
             <DetailsPageHeader username={route.params.name} navigation={navigation} />
             <KeyboardAvoidingView behavior="position">
                 <ScrollView style={styles.scroll}>
-                    <FoodInfo image={images.pizzaSlice}
-                              name={'Pates'}
-                              portion={'Assiette'}
+                    <FoodInfo image={images.lasagna}
+                              name={'Lasagne'}
+                              portion={'tranche'}
                               ingredients={'Lorem ipsum dolor sit amet, at eam rebum audire voluptua, mutat lorem ullamcorper'}
                     />
 
